@@ -1,161 +1,1057 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta name="theme-color" content="#0f0f14">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pranav Chawla is a Full Stack Web Developer building responsive web applications with HTML, CSS, JavaScript, Node.js, Express.js and MongoDB, with additional experience in Python and machine learning.">
+         <meta property="og:title"
+              content="Pranav Chawla | Full Stack Developer">
 
-<title>Pranav Chawla | Portfolio</title>
+          <meta property="og:description"
+                 content="Full Stack Web Developer portfolio showcasing responsive web applications, full-stack projects and machine learning work.">
 
-<link rel="stylesheet" href="style.css">
+          <meta property="og:type"
+            content="website">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+         <meta property="og:image"
+             content="profile.jpeg">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="author" content="Pranav Chawla">
+     <link rel="icon" type="image/jpeg" href="profile.jpeg">
+    <title>Pranav Chawla | Full Stack Developer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
 
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-<header>
+    <!-- ================= NAVBAR ================= -->
 
-<nav>
+    <header class="navbar">
 
-<h2>Pranav.</h2>
+        <div class="nav-container">
 
-<ul>
+            <a href="#home" class="logo">
+                Pranav<span>.</span>
+            </a>
 
-<li><a href="#home">Home</a></li>
+            <nav class="nav-menu">
 
-<li><a href="#about">About</a></li>
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
 
-<li><a href="#skills">Skills</a></li>
+            </nav>
 
-<li><a href="#projects">Projects</a></li>
+            <div class="nav-actions">
 
-<li><a href="#contact">Contact</a></li>
+                <a href="Pranav_Chawla_Resume.pdf (1).pdf" class="resume-btn" download>
+                    <i class="fa-solid fa-download"></i>
+                    Resume
+                </a>
 
-</ul>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
 
-</nav>
+            </div>
 
-</header>
-
-<section class="hero" id="home">
-
-<div class="hero-text">
-
-<h1>Hello, I'm <span>Pranav Chawla</span></h1>
-
-<h3>Frontend Developer & Content Creator</h3>
-
-<p>
-Passionate about building beautiful, responsive websites and creating engaging digital content.
-</p>
-
-<a href="#projects" class="btn">View Projects</a>
-
-</div>
-
-<div class="hero-image">
-
-<img src="profile.jpeg" alt="Profile">
-
-</div>
-
-</section>
-
-<section id="about" class="about">
-
-<h2>About Me</h2>
-
-<p>
-I am a Computer Science student passionate about Web Development, UI Design, and Content Creation. I enjoy building modern websites and continuously learning new technologies.
-</p>
-
-</section>
-
-<section id="skills">
-
-<h2>Skills</h2>
-
-<div class="cards">
-
-<div class="card">HTML5</div>
-
-<div class="card">CSS3</div>
-
-<div class="card">JavaScript</div>
-
-<div class="card">Git & GitHub</div>
-
-<div class="card">Responsive Design</div>
-
-<div class="card">UI/UX Basics</div>
-
-</div>
-
-</section>
-
-<section id="projects">
-
-    <h2>Projects</h2>
-
-    <div class="project-container">
-
-        <div class="project">
-            <h3>💼 Employee Salary Prediction</h3>
-            <p>
-                Machine Learning project that predicts employee salaries based on various features using Python, Pandas, Scikit-Learn, and data visualization techniques.
-            </p>
         </div>
 
-        <div class="project">
-            <h3>🌐 Responsive Web Design</h3>
-            <p>
-                Developed responsive web pages using HTML5, CSS3, Flexbox, CSS Grid, and Media Queries to ensure compatibility across all screen sizes.
-            </p>
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-container">
+
+                <div class="hero-content">
+
+                    <p class="hero-intro">
+                        <span class="intro-line"></span>
+                        Hello, I'm
+                    </p>
+
+                    <h1>
+                        Pranav <span>Chawla</span>
+                    </h1>
+
+                    <h2>
+                        Full Stack Web Developer
+                    </h2>
+
+                    <p class="hero-description">
+                        I build responsive and database-driven web application
+                        using modern frontend and backend technologies, with hands-on
+                        experience in REST APIs, JWT authentication,
+                        MangoDB and machine learning. 
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn primary-btn">
+                            View My Projects
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#contact" class="btn secondary-btn">
+                            Let's Connect
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="social-links">
+
+                        <a href="https://github.com/pranav5458" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/pranav-chawla-5458" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/pranav.chawla.5458?igsh=ZG5ycjFmYWMxcGhx" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image-container">
+
+                    <div class="hero-image-wrapper">
+
+                        <div class="image-glow"></div>
+
+                        <img
+                            src="profile.jpeg"
+                            alt="Pranav Chawla"
+                            class="profile-image"
+                        >
+
+                    </div>
+
+                    <div class="floating-card card-one">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Clean Code</span>
+                    </div>
+
+                    <div class="floating-card card-two">
+                        <i class="fa-solid fa-database"></i>
+                        <span>Full Stack</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+
+                <span>Scroll to explore</span>
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
+        <section id="about" class="about section">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">ABOUT ME</p>
+
+                    <h2>
+                        Turning ideas into
+                        <span>working applications.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-image">
+
+                        <div class="about-image-frame">
+
+                            <img
+                                src="profile.jpeg"
+                                alt="Pranav Chawla "
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-content">
+
+                        <p class="about-text">
+                            I'm a web developer focused on building responsive and
+                            practical web applications using modern frontend and
+                            backend technologies. I enjoy turning ideas into
+                            functional digital experiences and continuously
+                            improving my development skills through hands-on projects.
+                        </p>
+
+                        <p class="about-text">
+                              My experience includes frontend development with HTML,
+                              CSS and JavaScript, backend development with Node.js
+                              and Express.js, database integration with MongoDB,
+                              JWT authentication, and exploration of Python,
+                              data analysis and machine learning.
+                        </p>
+
+                        <div class="about-stats">
+
+                            <div class="stat">
+                                <h3>3</h3>
+                                <p>Projects Built</p>
+                            </div>
+
+                            <div class="stat">
+                                <h3>2</h3>
+                            
+                                <p>Internship Experience</p>
+                            </div>
+
+                            <div class="stat">
+                                <h3>∞</h3>
+                                <p>Learning & Improving</p>
+                            </div>
+
+                        </div>
+
+                        <a href="#contact" class="text-link">
+                            Let's Connect
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS SECTION ================= -->
+
+        <section id="skills" class="skills section">
+
+            <div class="section-container">
+
+                <div class="section-heading center">
+
+                    <p class="section-label">MY SKILLS</p>
+
+                    <h2>
+                        Technologies I
+                        <span>work with.</span>
+                    </h2>
+
+                    <p class="section-description">
+                        A growing toolkit focused on modern web development,
+                        backend technologies and practical application building.
+                    </p>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <!-- Frontend -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <h3>Frontend Development</h3>
+
+                        <p>
+                            Building responsive and interactive user interfaces.
+                        </p>
+
+                        <div class="skill-tags">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                            <span>Flexbox</span>
+                            <span>CSS Grid</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Backend -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+
+                        <h3>Backend Development</h3>
+
+                        <p>
+                            Creating APIs and server-side applications.
+                        </p>
+
+                        <div class="skill-tags">
+
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>REST APIs</span>
+                            <span>JWT</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Database -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <h3>Database</h3>
+
+                        <p>
+                            Working with databases for real-world applications.
+                        </p>
+
+                        <div class="skill-tags">
+
+                            <span>MongoDB</span>
+                            <span>MongoDB Atlas</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Programming -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+
+                        <h3>Programming & ML</h3>
+
+                        <p>
+                            Exploring programming, data analysis and machine learning.
+                        </p>
+
+                        <div class="skill-tags">
+
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Scikit-learn</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Tools -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+
+                        <h3>Tools & Workflow</h3>
+
+                        <p>
+                            Tools I use to develop, test and manage projects.
+                        </p>
+
+                        <div class="skill-tags">
+
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>Postman</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS SECTION ================= -->
+
+        <section id="projects" class="projects section">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">MY WORK</p>
+
+                    <h2>
+                        Projects I've
+                        <span>built.</span>
+                    </h2>
+
+                    <p class="section-description">
+                        A selection of projects that showcase my journey
+                        from frontend development to full-stack applications.
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- FEATURED PROJECT -->
+
+                    <article class="project-card featured-project">
+
+                        <div class="project-image">
+
+                            <img
+                                src="Screenshot (111).png"
+                                alt="Responsive Travel Website project"
+                            >
+
+                            <div class="project-overlay">
+
+                                <a href="https://github.com/pranav5458" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+
+                                <a href="https://pranav5458.github.io/responsive-travel-website/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                FEATURED PROJECT
+                            </span>
+
+                            <h3>
+                                Responsive Travel Website
+                            </h3>
+
+                            <p>
+                                
+                                    A full-stack travel booking platform featuring a responsive
+                                    user interface, user registration and login, JWT-based
+                                    authentication, booking functionality, REST APIs and
+                                    MongoDB database integration.
+
+                            </p>
+
+                            <div class="project-tech">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                                <span>JWT</span>
+                                <span>Authentication</span>
+                                <span>Booking Functionality</span>
+                                <span>Responsive frontend</span>
+
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="https://github.com/pranav5458/responsive_travel_website" target="_blank" rel="noopener noreferrer">
+                                    GitHub
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+
+                                <a href="https://pranav5458.github.io/responsive-travel-website/" target="_blank" rel="noopener noreferrer">
+                                    Live Demo
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SALARY PREDICTION -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="Screenshot (112).png"
+                                alt="Employee Salary Prediction project">
+
+                            <div class="project-overlay">
+
+                                <a href="https://github.com/pranav5458" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                 <a href="https://pranav5458.github.io/todo-app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                MACHINE LEARNING
+                            </span>
+
+                            <h3>
+                                Employee Salary Prediction
+                            </h3>
+
+                            <p>
+                                   A machine learning project that analyzes employee data,
+                                   performs data preprocessing and exploratory analysis,
+                                   and uses predictive modeling techniques to estimate
+                                   employee salaries and evaluate model performance.
+                            </p>
+
+                            <div class="project-tech">
+
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>NumPy</span>
+                                <span>Scikit-learn</span>
+                                <span>Machine Learning</span>
+
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="https://github.com/pranav5458/salary-prediction" target="_blank" rel="noopener noreferrer">
+                                    GitHub
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                 <a href="https://pranav5458.github.io/todo-app/" target="_blank" rel="noopener noreferrer">
+                                    Live Demo
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TODO APP -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+                        
+                             <img
+                              src="images/todo-list.png"
+                              alt="To-Do List application project"
+                              >
+
+                            <div class="project-overlay">
+
+                                <a href="https://github.com/pranav5458" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+
+                                <a href="https://pranav5458.github.io/todo-app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                WEB APPLICATION
+                            </span>
+
+                            <h3>
+                                To-Do List Application
+                            </h3>
+
+                            <p>
+                                   A responsive task management application built with
+                                   JavaScript. Users can add, complete and remove tasks,
+                                   with LocalStorage used to preserve tasks between sessions.
+                            </p>
+
+                            <div class="project-tech">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>LocalStorage</span>
+
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="https://github.com/pranav5458/todo-app" target="_blank" rel="noopener noreferrer">
+                                    GitHub
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+
+                                <a href="https://pranav5458.github.io/todo-app/" target="_blank" rel="noopener noreferrer">
+                                    Live Demo
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="projects-more">
+
+                    <a href="https://github.com/pranav5458" target="_blank" rel="noopener noreferrer" class="btn secondary-btn">
+                        View More on GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EXPERIENCE SECTION ================= -->
+
+        <section id="experience" class="experience section">
+
+            <div class="section-container">
+
+                <div class="section-heading center">
+
+                    <p class="section-label">EXPERIENCE</p>
+
+                    <h2>
+                        My learning &
+                        <span>professional journey.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="timeline">
+
+    <!-- ================= CODEVEDA INTERNSHIP ================= -->
+
+    <div class="timeline-item">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-date">
+            June 2026 - July 2026
         </div>
 
-        <div class="project">
-            <h3>✅ To-Do List App</h3>
-            <p>
-                Interactive task management application built with HTML, CSS, and JavaScript featuring add, edit, delete, and mark-complete functionalities.
-            </p>
-        </div>
+        <div class="timeline-content">
 
-        <div class="project">
-            <h3>⚛️ Front-End Frameworks</h3>
+            <span class="experience-type">
+                WEB DEVELOPMENT
+            </span>
+
+            <h3>
+                Web Development Intern
+            </h3>
+
+            <h4>
+                CodeVeda
+            </h4>
+
             <p>
-                Learning modern front-end development using React.js to build reusable components, dynamic interfaces, and responsive single-page applications.
+                Completed a Web Development internship focused on
+                building responsive and interactive web applications.
+                Worked with HTML, CSS and JavaScript while gaining
+                practical experience in responsive design, UI
+                development and JavaScript-based functionality.
             </p>
+
+            <div class="experience-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+
+            </div>
+
         </div>
 
     </div>
 
-</section>
 
-<section id="contact">
+    <!-- ================= AI/ML INTERNSHIP ================= -->
 
-<h2>Contact Me</h2>
+    <div class="timeline-item">
 
-<p>Email : chawlapranav3232@email.com</p>
+        <div class="timeline-dot"></div>
 
-<p>Phone : +91 9694276375</p>
+        <div class="timeline-date">
+            18 June 2025 - 30 July 2025
+        </div>
 
-<p>GitHub : github.com/pranav.5458</p>
+        <div class="timeline-content">
 
-</section>
+            <span class="experience-type">
+                AI / MACHINE LEARNING
+            </span>
 
-<footer>
+            <h3>
+                AI/ML Intern
+            </h3>
 
-<p>© 2026 Pranav Chawla | All Rights Reserved</p>
+            <h4>
+                AICTE × IBM
+            </h4>
 
-</footer>
+            <p>
+                Completed an AI and Machine Learning internship
+                focused on developing practical knowledge of
+                machine learning concepts, data analysis and
+                AI-based applications through hands-on learning
+                and project work.
+            </p>
+
+            <div class="experience-tags">
+
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>Data Analysis</span>
+                <span>AI</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </section>
+
+
+        <!-- ================= RESUME CTA ================= -->
+
+        <section class="resume-section">
+
+            <div class="section-container">
+
+                <div class="resume-card">
+
+                    <div>
+
+                        <p class="section-label">
+                            WANT TO KNOW MORE?
+                        </p>
+
+                        <h2>
+                            Take a look at my
+                            <span>resume.</span>
+                        </h2>
+
+                        <p>
+                            Explore my Technical Skills, Internships, projects,
+                            Education and hands-on development experience.
+                        </p>
+
+                    </div>
+
+                    <a href="Pranav_Chawla_Rusume.pdf (1).pdf" class="btn primary-btn" download>
+
+                        Download Resume
+
+                        <i class="fa-solid fa-download"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT SECTION ================= -->
+
+        <section id="contact" class="contact section">
+
+            <div class="section-container">
+
+                <div class="section-heading center">
+
+                    <p class="section-label">CONTACT</p>
+
+                    <h2>
+                        Let's build something
+                        <span>together.</span>
+                    </h2>
+
+                    <p class="section-description">
+                        Have a project, internship opportunity, collaboration 
+                        idea or simply want to connect? i'd be happy to hear from you. 
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <div class="contact-info">
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:chawlapranav3232@gmail.com">
+                                    chawlapranav3232@gmail.com
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+
+                            <div>
+                                <span>LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/pranav-chawla-5458/" target="_blank" rel="noopener noreferrer">
+                                    Connect with me
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+
+                            <div>
+                                <span>GitHub</span>
+                                <a href="https://github.com/pranav5458" target="_blank" rel="noopener noreferrer">
+                                    View my repositories
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <form class="contact-form" id="contact-form">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Your Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Your Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Write your message..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button type="submit" class="btn primary-btn">
+
+                            Send Message
+
+                            <i class="fa-regular fa-paper-plane"></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    Pranav<span>.</span>
+                </a>
+
+                <p>
+                    Full Stack Web Developer focused on building responsive,
+                    practical and user-friendly web applications.
+                </p>
+
+            </div>
+
+
+            <div class="footer-socials">
+
+                <a href="https://github.com/pranav5458" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/pranav-chawla-5458/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://www.instagram.com/pranav.chawla.5458?igsh=ZG5ycjFmYWMxcGhx" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+        <a href="#home" class="back-to-top">
+           Back to top
+           <i class="fa-solid fa-arrow-up"></i>
+        </a>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Pranav Chawla. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
 
 </body>
-
 </html>
